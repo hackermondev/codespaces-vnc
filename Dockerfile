@@ -15,7 +15,3 @@ RUN sudo apt-get update \
    xvfb \
  && sudo rm -rf /var/lib/apt/lists/*
  
- 
-#  Codespaces stuff
-COPY library-scripts/github-debian.sh /tmp/library-scripts/
-RUN apt-get update && bash /tmp/library-scripts/github-debian.sh
